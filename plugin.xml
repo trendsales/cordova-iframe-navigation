@@ -7,12 +7,12 @@
     <license>Apache 2.0</license>
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="CDVIFrameNagivation">
-                <param name="ios-package" value="CDVIFrameNagivation"/>
+            <feature name="CDVIFrameNavigation">
+                <param name="ios-package" value="CDVIFrameNavigation"/>
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <header-file src="src/ios/CDVIFrameNagivation.h" />
-        <source-file src="src/ios/CDVIFrameNagivation.m" />
+        <header-file src="src/ios/CDVIFrameNavigation.h" />
+        <source-file src="src/ios/CDVIFrameNavigation.m" />
     </platform>
 </plugin>
