@@ -1,4 +1,4 @@
-#import "CDVUserAgent.h"
+#import "CDVIFrameNavigation.h"
 #import <Cordova/CDVPlugin.h>
 #import <WebKit/WebKit.h>
 
