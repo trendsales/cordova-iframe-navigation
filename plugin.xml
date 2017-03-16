@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-iframe-navigation" version="1.0.0">
+    <name>Cordova iFrame Navigation</name>
+    <description>
+      When window.open is called inside an iframe, instead of doing nothing, url is opened in the browser
+    </description>
+    <license>Apache 2.0</license>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVIFrameNagivation">
+                <param name="ios-package" value="CDVIFrameNagivation"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVIFrameNagivation.h" />
+        <source-file src="src/ios/CDVIFrameNagivation.m" />
+    </platform>
+</plugin>
