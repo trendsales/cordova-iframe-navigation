@@ -20,4 +20,20 @@
     return nil;
 }
 
+- (BOOL)shouldOverrideLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    if (navigationType == 0)
+    {
+        if ([request.URL.host rangeOfString:@"trendsales"].location == NSNotFound
+            || [request.URL.host rangeOfString:@"about.trendsales."].location != NSNotFound
+            || [request.URL.host rangeOfString:@"www.trendsales."].location != NSNotFound
+            || [request.URL.host rangeOfString:@"external.trendsales."].location != NSNotFound)
+        {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:request.URL.absoluteString]];
+            return NO;
+        }
+    }
+    return YES;
+}
+
 @end
